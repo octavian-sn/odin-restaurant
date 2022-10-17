@@ -120,13 +120,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"body\": () => (/* binding */ body),\n/* harmony export */   \"default\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n\n\nfunction home() {\n    // HEADER\n    const header = document.createElement('div');\n    header.id = 'header';\n\n    const headerBackground = document.createElement('div');\n    headerBackground.id = 'background';\n    header.appendChild(headerBackground);\n    const overlay = document.createElement('div');\n    overlay.id = 'overlay'\n    const title = document.createElement('h1');\n    title.innerText = 'La cucina de NODE';\n    overlay.appendChild(title);\n    header.appendChild(overlay);\n\n    _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].appendChild(header);\n\n    // BUTTONS\n    const buttons = document.createElement('div');\n    buttons.id = 'buttons';\n\n    const home = document.createElement('button');\n    home.innerText = 'HOME';\n    buttons.appendChild(home);\n    const menu = document.createElement('button');\n    menu.innerText = 'MENU';\n    buttons.appendChild(menu);\n    const contact = document.createElement('button');\n    contact.innerText = 'CONTACT';\n    buttons.appendChild(contact);\n\n    _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].appendChild(buttons);\n}\n\nfunction body() {\n    const body = document.createElement('div');\n    body.id = 'text';\n    _index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].appendChild(body);\n    return body;\n}\n\n//# sourceURL=webpack://odin-restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nconst display = document.getElementById('content');\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);\n\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n\n\nconst display = document.getElementById('content');\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(function changeContent() {\n    let content = (0,_home_js__WEBPACK_IMPORTED_MODULE_1__.body)();\n    let text = document.createElement('p');\n    text.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi in. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Vel risus commodo viverra maecenas accumsan lacus vel. Amet venenatis urna cursus eget nunc scelerisque viverra. Maecenas ultricies mi eget mauris pharetra et ultrices. Auctor eu augue ut lectus arcu bibendum at varius vel. Morbi tristique senectus et netus et malesuada fames ac. Ut venenatis tellus in metus vulputate. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Ultricies tristique nulla aliquet enim. Nibh venenatis cras sed felis. Fringilla ut morbi tincidunt augue interdum velit euismod.'\n    content.appendChild(text);\n})()\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -307,7 +317,7 @@ eval("module.exports = __webpack_require__.p + \"25a77125095ea0146c04.jpg\";\n\n
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
