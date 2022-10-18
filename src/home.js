@@ -1,4 +1,5 @@
 import display from './index.js';
+import dog from './images/dog.jpg';
 
 export default function home() {
     // HEADER
@@ -46,6 +47,10 @@ export default function home() {
 export let homePage = (arg)=> {
     arg.innerHTML = '';
     let text = document.createElement('p');
-    text.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi in. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Vel risus commodo viverra maecenas accumsan lacus vel. Amet venenatis urna cursus eget nunc scelerisque viverra. Maecenas ultricies mi eget mauris pharetra et ultrices. Auctor eu augue ut lectus arcu bibendum at varius vel. Morbi tristique senectus et netus et malesuada fames ac. Ut venenatis tellus in metus vulputate. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Ultricies tristique nulla aliquet enim. Nibh venenatis cras sed felis. Fringilla ut morbi tincidunt augue interdum velit euismod.'
+    text.innerText = "Initially I wanted to stuff this section with a lorem ipsum, but then I thought that it might be better if I actually wrote something useful here. :D \n\n The reason why this doesn't look too fancy is because I have been focusing mainly on clear, dry code, using modules, and creating all of this using only JavaScript. \n\n I find it rather difficult understanding exactly what should go where in modules since it appears to me as everything is intrinsically interconnected and interdependent, but I am getting there, I think it's mostly down to how I am using scope and closure. \n\n Web dev is hard, but I love it! \n Thank you for taking the time to read this! Here's a puppy! <3"
     arg.appendChild(text);
+    const puppy = document.createElement('img');
+    puppy.id = 'puppy';
+    puppy.src = dog;
+    arg.appendChild(puppy);
 }

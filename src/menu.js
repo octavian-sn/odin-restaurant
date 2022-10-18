@@ -1,3 +1,6 @@
+import salmon from './images/salmon.jpg';
+import sandwich from './images/sandwich.jpg';
+import pancake from './images/pancake.jpg';
 export default function menuPage(arg) {
     arg.innerHTML = '';
 
@@ -22,7 +25,6 @@ export default function menuPage(arg) {
 
         menu.appendChild(frame);
     })
-
     arg.appendChild(menu);
 
 }
@@ -31,19 +33,19 @@ const products = [
     {
         'name': 'Le Grand Salmon',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'picture': '../src/images/salmon.jpg',
+        'picture': salmon,
         'price' : '399.99$'
     },
     {
         'name': 'Sizzlering Sandwich',
         'description': 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'picture': '../src/images/sandwich.jpg',
+        'picture': sandwich,
         'price' : '26.99$'
     },
     {
         'name': 'The Perverted Pancake',
         'description': 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        'picture': '../src/images/pancake.jpg',
+        'picture': pancake,
         'price' : '128.99$'
     }
 ]
