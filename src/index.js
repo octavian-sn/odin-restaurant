@@ -34,4 +34,4 @@ function remove() {
     }
 }
 
-console.log(buttons);
+// console.log(buttons);

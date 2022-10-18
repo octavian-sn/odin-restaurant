@@ -126,3 +126,17 @@ ul {
 #contact img {
     border: 1px solid black;
 }
+.git {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 10px;
+    font-weight:500;
+    color: var(--black-color);
+    margin-bottom: 16px;
+}
+#git-hub {
+    height: auto;
+}
